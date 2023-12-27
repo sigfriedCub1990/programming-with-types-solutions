@@ -1,7 +1,7 @@
 import { describe, it, expect } from "bun:test";
-import { map, filter, reduce } from "./hoc_with_iterators";
-import { BinaryTreeNode } from "./binary_tree";
-import { FluentIterable } from "./fluent_iterable";
+import { map, filter, reduce } from "../hoc_with_iterators";
+import { BinaryTreeNode } from "../binary_tree";
+import { FluentIterable } from "../fluent_iterable";
 
 describe("HOC with iterators", () => {
   it("map", () => {

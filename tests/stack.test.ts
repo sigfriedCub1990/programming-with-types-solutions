@@ -1,5 +1,5 @@
 import { it, describe, expect } from "bun:test";
-import { Stack } from "./stack";
+import { Stack } from "../stack";
 
 describe("Stack tests", () => {
   it("should build an instance of a Stack", () => {

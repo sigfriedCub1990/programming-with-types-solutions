@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { Percentage } from "./ch3_enforcing_constraints";
+import { Percentage } from "../ch3_enforcing_constraints";
 
 describe("Percentage tests", () => {
   describe("when value is less than 0", () => {

@@ -1,6 +1,6 @@
 import { describe, it, spyOn, expect } from "bun:test";
-import { SingletonDecorator, WidgetFactory } from "./decorator_pattern";
-import { makeWidget, singletonDecorator } from "./decorator_pattern_fp";
+import { SingletonDecorator, WidgetFactory } from "../decorator_pattern";
+import { makeWidget, singletonDecorator } from "../decorator_pattern_fp";
 
 describe("WidgetFactory Decorator tests", () => {
   it("should build a Widget once", () => {

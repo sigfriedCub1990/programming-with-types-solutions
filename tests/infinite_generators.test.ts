@@ -3,7 +3,7 @@ import {
   square,
   take,
   drop,
-} from "./infinite_generators";
+} from "../infinite_generators";
 import { describe, it, expect } from "bun:test";
 
 describe("Infinite generators tests", () => {

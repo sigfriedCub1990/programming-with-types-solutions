@@ -2,9 +2,9 @@
 
 declare const celsiusType: unique symbol;
 
-class Celsius {
+export class Celsius {
   readonly value: number;
-  [celsiusType]: void;
+  [celsiusType]: unknown;
 
   constructor(value: number) {
     if (value < -273.15)
@@ -15,9 +15,9 @@ class Celsius {
 }
 
 // Another approach to enforce constraints would be a Factory function
-class CelsiusFactory {
+export class CelsiusFactory {
   readonly value: number;
-  [celsiusType]: void;
+  [celsiusType]: unknown;
 
   private constructor(value: number) {
     this.value = value;
@@ -34,7 +34,7 @@ class CelsiusFactory {
 declare const percentageType: unique symbol;
 export class Percentage {
   readonly value: number;
-  [percentageType]: void;
+  [percentageType]: unknown;
 
   private constructor(value: number) {
     this.value = value;

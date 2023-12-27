@@ -1,10 +1,10 @@
 import { describe, it, expect } from "bun:test";
-import { reverse, arr_reverse } from "./generic_algorithms";
+import { reverse, arr_reverse } from "../generic_algorithms";
 import {
   ArrayIterator,
   ArrayRandomIterator,
   elementAtRandomIterator,
-} from "./extending_iterators";
+} from "../extending_iterators";
 
 describe("Generic algorithms", () => {
   it("should reverse an iterable (not efficient)", () => {

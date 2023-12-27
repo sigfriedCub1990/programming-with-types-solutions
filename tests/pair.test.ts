@@ -1,4 +1,4 @@
-import { Pair } from "./pair";
+import { Pair } from "../pair";
 import { expect, describe, it } from "bun:test";
 
 describe("Pair tests", () => {
