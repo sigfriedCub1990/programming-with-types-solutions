@@ -5,7 +5,7 @@ const square = (x: number) => x * x;
 
 // square(identity("Hello")); This fails
 
-class Box<T> {
+export class Box<T> {
   private value: T;
 
   constructor(value: T) {
@@ -18,7 +18,3 @@ class Box<T> {
 }
 
 const unbox = <T>(box: Box<T>) => box.getValue();
-
-const box = new Box("Hello, world!");
-const value = unbox(box);
-console.log(value);

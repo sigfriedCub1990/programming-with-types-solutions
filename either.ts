@@ -1,4 +1,4 @@
-class Either<TLeft, TRight> {
+export class Either<TLeft, TRight> {
   readonly value: TLeft | TRight;
   readonly left: boolean;
 
@@ -32,15 +32,15 @@ class Either<TLeft, TRight> {
   }
 }
 
-class Circle {}
+// class Circle {}
 
-class Triangle {}
+// class Triangle {}
 
-function slot(triangle: Triangle) {
-  console.log(triangle);
-}
+// function slot(triangle: Triangle) {
+//   console.log(triangle);
+// }
 
-const myTriangle: Either<Triangle, Circle> = Either.makeLeft(new Triangle());
-if (myTriangle.isLeft()) {
-  slot(myTriangle.getLeft());
-}
+// const myTriangle: Either<Triangle, Circle> = Either.makeLeft(new Triangle());
+// if (myTriangle.isLeft()) {
+//   slot(myTriangle.getLeft());
+// }
